@@ -18,6 +18,11 @@ function ready() {
 
 function addToCartClicked(event) {
     var button = event.target
+    if(button.disabled===true){
+        alert('This item is already added to the cart')
+              return
+    }
+    button.disabled=true
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
