@@ -5,7 +5,9 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-
+    var cartValue=JSON.parse(localStorage.getItem('array'))||[];
+    
+    document.getElementById("cartValue").innerText=cartValue.length
     var addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (var i = 0; i < addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
@@ -44,6 +46,9 @@ function addtolocalstorage(title, price, imageSrc){
     array=loaclarray
     array.push(obj)
     localStorage.setItem("array",JSON.stringify(array));
+    console.log(array.length)
+    var cartLenght=array.length
+    document.getElementById("cartValue").innerText=cartLenght
 }
 
 

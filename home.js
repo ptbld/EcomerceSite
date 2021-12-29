@@ -5,7 +5,9 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-
+    var cartValue=JSON.parse(localStorage.getItem('array'))||[];
+    
+    document.getElementById("cartValue").innerText=cartValue.length
     var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
