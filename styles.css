@@ -390,6 +390,14 @@ font-size: 1.25rem
     text-decoration: none;
 
 }
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+
+}
 .logo i{
     font-size: 3rem;
     color: white;
