@@ -1,0 +1,358 @@
+<html><head>
+<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/f130aa11/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-XFKQFGC480&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-HF8Z5BMP9T&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-HT824NR8GX&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://cbe.capturehighered.net/cbe/cbe.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PJR8XS8"></script><script src="/form/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/form/jslibrary/1647410350244/sfdc/NetworkTracking.js" type="text/javascript"></script><script>try{ NetworkTracking.init('/form/_ui/networks/tracking/NetworkTrackingServlet', 'network', '06641000006GRKt'); }catch(x){}</script><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script><meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT">
+
+		<script src="/form/resource/1689247335000/TargetX_Eventsb__JSresources/jquery.min.3.0.0.js"></script>
+		<script src="/form/resource/1689247335000/TargetX_Eventsb__JSresources/jquery-ui.min.1.12.0.js"></script>
+
+		<script type="text/javascript">
+   function getUrlVars()
+   {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) 
+    {
+     vars[key] = value;
+    });
+    return vars;
+   }
+
+   function preventEnterSubmission() {
+    $(document).on("keypress", ":input:not(textarea)", function (event) {
+     if (event.keyCode == 13) {
+      event.preventDefault();
+     }
+    });
+   }
+
+   var params = getUrlVars() ;
+
+   if (params['hideSubmit'] == '1') {
+    var newStyle = document.createElement("STYLE");
+    var hideSupportInfoStyle = document.createTextNode(".supportInfo {display:none}");
+    var hideCaptchaActionsStyle = document.createTextNode(".actions .primaryAction, #disabled-explanation {display:none !important}");
+    newStyle.appendChild(hideSupportInfoStyle);
+    newStyle.appendChild(hideCaptchaActionsStyle);
+    document.head.appendChild(newStyle);
+    preventEnterSubmission();
+   }
+
+   function sizeiFrame()
+   {
+    // Only run if we're sure we're iframed, to prevent issues
+    if(!params['hideSubmit'] == '1') return ;
+
+    var cont = document.getElementsByClassName('wFormContainer')[0] ;
+    parent.resizeIframe(cont.scrollHeight);
+
+    var lastHeight = cont.scrollHeight ;
+
+    setInterval(function(){
+     if (cont.scrollHeight != lastHeight) {
+      lastHeight = cont.scrollHeight;
+      parent.resizeIframe(cont.scrollHeight);
+     }
+    }, 1000);
+   }
+  </script><!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://mason.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer=""></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://mason.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=3324c64fed7e8ebe9602e1985610272f100e82bf" rel="stylesheet" type="text/css">
+
+    <link href="https://mason.tfaforms.net/uploads/themes/theme-51.css" rel="stylesheet" type="text/css">
+    <link href="https://mason.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=3324c64fed7e8ebe9602e1985610272f100e82bf" rel="stylesheet" title="" type="text/css">
+    <script type="text/javascript" src="https://mason.tfaforms.net/wForms/3.11/js/wforms.js?v=3324c64fed7e8ebe9602e1985610272f100e82bf"></script>
+    <script type="text/javascript">
+        if(wFORMS.behaviors.prefill) wFORMS.behaviors.prefill.skip = true;
+    </script>
+    <script type="text/javascript" src="https://mason.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=3324c64fed7e8ebe9602e1985610272f100e82bf"></script>
+    <script>
+        var FAoldJQ;
+        if (typeof $ != 'undefined' && $.noConflict) FAoldJQ = $.noConflict(true);
+    </script>
+    <script src="https://mason.tfaforms.net/dist/jquery/jquery.js"></script>
+    <script src="https://mason.tfaforms.net/js/typeahead/v1.2.0/typeahead.bundle.js"></script>
+    <script>
+        var FA$ = $.noConflict(true);
+        if (FAoldJQ) $ = FAoldJQ;
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+	</head>
+
+	<body onload="sizeiFrame()" class="default wFormWebPage">
+
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">	
+	<script src="/soap/ajax/23.0/connection.js"></script>
+	<link href="/form/resource/1689247335000/TargetX_Eventsb__JSresources/themes.1.12.0/smoothness/jquery-ui.min.css" rel="stylesheet"><span class="default wFormWebPage">
+<div class="wFormContainer" style="max-width: 530px; width:auto;">
+    <div class="wFormHeader"></div>
+    <style type="text/css">
+                #tfa_1675,
+                *[id^="tfa_1675["] {
+                    width: 321px !important;
+                }
+                #tfa_1675-D,
+                *[id^="tfa_1675["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            </style><div class=""><div class="wForm" id="218393-WRPR" dir="ltr">
+<div class="codesection" id="code-218393"><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJR8XS8');</script>
+</div>
+<form method="post" action="https://mason.tfaforms.net/api_v2/rest/workflow/processor" class="hintsBelow labelsLeftAligned" id="218393" role="form">
+<div id="tfa_1673" class="section empty group"><label class="label preField" id="tfa_1673-L"><b><br><br>Fill out the form below to learn more about becoming a Mason Online student.</b></label></div>
+<fieldset id="tfa_1670" class="section">
+<legend id="tfa_1670-L"><b>Program Information</b></legend>
+<div id="tfa_1671" class="section inline group">
+<div class="oneField field-container-D  labelsAbove  " id="tfa_1660-D">
+<label id="tfa_1660-L" class="label preField reqMark" for="tfa_1660"><span style="font-size: 13.6px;">What degree level are you interested in?</span></label><br><div class="inputWrapper"><select aria-required="true" id="tfa_1660" name="tfa_1660" title="What degree level are you interested in?" class="required"><option value="">Please select...</option>
+<option value="tfa_1661" id="tfa_1661" data-conditionals="#tfa_1672,#tfa_1679" class="">Undergraduate</option>
+<option value="tfa_1662" id="tfa_1662" data-conditionals="#tfa_1664,#tfa_1360,#tfa_1358,#tfa_1675" class="">Graduate</option></select></div>
+</div>
+<div class="oneField field-container-D     offstate" id="tfa_1675-D">
+<label id="tfa_1675-L" class="label preField " for="tfa_1675">What is your desired Mason graduate program?</label><div class="inputWrapper">
+<span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" value="" data-condition="`#tfa_1662`" title="What is your desired Mason graduate program?" data-dataset-allow-free-responses="0" data-dataset-clear-cache="0" autocomplete="off" data-dataset-parameters="undefined" data-dataset-timestamp="1692984211" data-dataset-id="b942fbc9-818a-4342-b960-3a8e7a3dd0d0" data-dataset-map="b=tfa_1360,c=tfa_1664,d=tfa_1358," data-dataset-type="salesforce-picklist" data-dataset-url="https://mason.tfaforms.net/api_v2/datasets" class="wfAutosuggest tt-hint" disabled="" readonly="" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(239, 239, 239, 0.3);"><input type="text" id="tfa_1675" name="tfa_1675" value="" data-condition="`#tfa_1662`" title="What is your desired Mason graduate program?" data-dataset-allow-free-responses="0" data-dataset-clear-cache="0" autocomplete="off" data-dataset-parameters="undefined" data-dataset-timestamp="1692984211" data-dataset-id="b942fbc9-818a-4342-b960-3a8e7a3dd0d0" data-dataset-map="b=tfa_1360,c=tfa_1664,d=tfa_1358," data-dataset-type="salesforce-picklist" data-dataset-url="https://mason.tfaforms.net/api_v2/datasets" class="wfAutosuggest tt-input" disabled="" spellcheck="false" dir="auto" aria-activedescendant="" aria-owns="tfa_1675_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list" style="position: relative; vertical-align: top; background-color: transparent;"><span role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 13.6px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div role="presentation" class="tt-dataset tt-dataset-0"></div></div></span><i class="fa fa-spinner fa-pulse fa-fw tt-spinner"></i><i class="fa fa-search tt-search" aria-hidden="true"></i><i class="fa fa-times-circle tt-clear no-input" tabindex="0" aria-label="Clear field"></i>
+</div>
+</div>
+<div class="oneField field-container-D     offstate" id="tfa_1679-D">
+<label id="tfa_1679-L" class="label preField " for="tfa_1679">What is your desired Mason undergraduate program?</label><div class="inputWrapper">
+<span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" value="" data-condition="`#tfa_1661`" title="What is your desired Mason undergraduate program?" data-dataset-allow-free-responses="0" data-dataset-clear-cache="0" autocomplete="off" data-dataset-parameters="undefined" data-dataset-timestamp="1691455218" data-dataset-id="ed73ab4e-6473-4fac-bb93-9b4442666c69" data-dataset-map="b=tfa_1672," data-dataset-type="salesforce-picklist" data-dataset-url="https://mason.tfaforms.net/api_v2/datasets" class="wfAutosuggest tt-hint" disabled="" readonly="" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(239, 239, 239, 0.3);"><input type="text" id="tfa_1679" name="tfa_1679" value="" data-condition="`#tfa_1661`" title="What is your desired Mason undergraduate program?" data-dataset-allow-free-responses="0" data-dataset-clear-cache="0" autocomplete="off" data-dataset-parameters="undefined" data-dataset-timestamp="1691455218" data-dataset-id="ed73ab4e-6473-4fac-bb93-9b4442666c69" data-dataset-map="b=tfa_1672," data-dataset-type="salesforce-picklist" data-dataset-url="https://mason.tfaforms.net/api_v2/datasets" class="wfAutosuggest tt-input" disabled="" spellcheck="false" dir="auto" aria-activedescendant="" aria-owns="tfa_1679_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list" style="position: relative; vertical-align: top; background-color: transparent;"><span role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 13.6px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div role="presentation" class="tt-dataset tt-dataset-1"></div></div></span><i class="fa fa-spinner fa-pulse fa-fw tt-spinner"></i><i class="fa fa-search tt-search" aria-hidden="true"></i><i class="fa fa-times-circle tt-clear no-input" tabindex="0" aria-label="Clear field"></i>
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset id="tfa_1666" class="section wf-acl-hidden">
+<legend id="tfa_1666-L">Hidden Fields</legend>
+<div id="tfa_1667" class="section inline group">
+<div class="oneField field-container-D     offstate" id="tfa_1360-D">
+<label id="tfa_1360-L" class="label preField " for="tfa_1360">Hidden Mason Program ID GR</label><div class="inputWrapper"><input type="text" id="tfa_1360" name="tfa_1360" value="" data-condition="`#tfa_1662`" title="Hidden Mason Program ID GR" class="" disabled=""></div>
+</div>
+<div class="oneField field-container-D     offstate" id="tfa_1672-D">
+<label id="tfa_1672-L" class="label preField " for="tfa_1672">Hidden Mason Program ID UG</label><div class="inputWrapper"><input type="text" id="tfa_1672" name="tfa_1672" value="" data-condition="`#tfa_1661`" title="Hidden Mason Program ID UG" class="" disabled=""></div>
+</div>
+<div class="oneField field-container-D     offstate" id="tfa_1358-D">
+<label id="tfa_1358-L" class="label preField " for="tfa_1358">Hidden Wiley Program UUID</label><div class="inputWrapper"><input type="text" id="tfa_1358" name="tfa_1358" value="" data-condition="`#tfa_1662`" title="Hidden Wiley Program UUID" class="" disabled=""></div>
+</div>
+<div class="oneField field-container-D     offstate" id="tfa_1664-D">
+<label id="tfa_1664-L" class="label preField " for="tfa_1664">Hidden Wiley Indicator</label><div class="inputWrapper"><input type="text" id="tfa_1664" name="tfa_1664" value="" data-condition="`#tfa_1662`" title="Hidden Wiley Indicator" class="" disabled=""></div>
+</div>
+</div>
+</fieldset>
+<div class="actions" id="218393-A" data-contentid="submit_button"><input type="submit" data-label="Next" class="primaryAction" id="submit_button" value="Next"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="472-9e8e0f17bd177a0c365c047255822df6" name="tfa_dbCounters" id="tfa_dbCounters" autocomplete="off"><input type="hidden" value="218393" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="14d952625410221d8c51966964e552c9" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="1695736776" name="tfa_dbTimeStarted" id="tfa_dbTimeStarted" autocomplete="off"><input type="hidden" value="49" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="tfa_1672,tfa_1679,tfa_1664,tfa_1360,tfa_1358,tfa_1675" name="tfa_switchedoff" id="tfa_switchedoff">
+</form>
+</div></div><div class="wFormFooter"><p class="supportInfo"><br></p></div>
+  <p class="supportInfo">
+      </p>
+ </div>
+
+<script id="open-telemetry-script" type="text/javascript" src="https://mason.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js" data-customer-id="2028" data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces" data-exporter-console="0"></script>
+</span>
+
+	<script>
+ fieldCounter = 0;
+ function makeSchoolpicker(fieldname, accType)
+ {
+  fieldname = fieldname.replace(" ","");
+  fieldname = 'tfa_'+fieldname;
+  var fullNewId = fieldname + "[lookupField" + fieldCounter ;
+  var idEscaped = fieldname + "\\[lookupField" + fieldCounter ;
+  $("#"+fieldname).attr("name",fullNewId);//Rename old field
+  $("#"+fieldname).attr("id",fullNewId);
+  document.getElementById(fullNewId).value = "" ;
+  // Even though it won't do anything, we need to set this on the fake field to avoid javascript errors
+  var con = document.getElementById(fullNewId).getAttribute('data-condition') ;
+  $("#"+fieldname+"-D").append('<input id="'+fieldname+'" name="'+fieldname+'" type="text" style="display:none;" data-condition="' + con + '">');
+  var respLookup = new Array();
+  $('#' + idEscaped).autocomplete(
+  {
+   source: function( request, response )
+   {
+    $.ajax(
+    {
+     url: "/form/TargetX_Eventsb__schoolPicker",
+     type: "POST",
+     dataType: "json",
+     data: 
+     {
+      nl: "yes", 
+      otl: "Account",
+      term: request.term,
+      type: accType
+     },
+     success: function( data )
+     {
+      var respJSON = data;
+      for(var key in respJSON)
+      {
+       var row = respJSON[key];
+       respLookup[row.value] = row.id;
+      }
+      response(data);
+     }
+    });
+   },
+   select:function(event,ui)
+   {
+    $("#"+fieldname).val(respLookup[ui.item.label]);
+   }
+  });
+  $('#' + idEscaped).blur(function(){
+   if ($(this).parent().parent().children('input').val()=='')
+    $(this).val('');
+  })
+
+
+  // Validate that the hidden field actually got a value
+  wFORMS.behaviors.validation.messages['clickedSchoolpicker' + fieldCounter] = "Please select a value from the dropdown";
+  
+  wFORMS.behaviors.validation.rules['clickedSchoolpicker' + fieldCounter] = { selector: "#"+fieldname,
+   check: function(element) {
+    if(document.getElementById(fieldname+"-D").className.indexOf("required")>0) {
+     var c=document.getElementById(fieldname);
+     if(element.value=='' || element.value==null) {
+      return false ;
+     }
+    }
+    return true;
+  }};
+  fieldCounter++ ;
+ }
+ 
+ function verifyFieldMatch(fieldNum1, fieldNum2) {
+  var field1 = "tfa_" + fieldNum1 ;
+  var field2 = "tfa_" + fieldNum2 ;
+ 
+  wFORMS.behaviors.validation.messages['areSame' + fieldCounter] = "The given values do not match";
+  
+  wFORMS.behaviors.validation.rules['areSame' + fieldCounter] = { selector: "#"+field2,
+   check: function(element) {
+   var c=document.getElementById(field1);
+   if(element.value!=c.value) {
+    return false ;
+   }
+   return true;
+  }};
+  fieldCounter++ ;
+ }
+
+ function preventPaste(field) {
+  fieldId = 'tfa_' + field;
+  $('#'+fieldId).bind('paste', function(e) {
+   e.preventDefault();
+   alert('Copy/Paste not permitted.');
+  });
+ }
+  
+ $(function() {
+  // Grey out submit button
+  var _pv = wFORMS.behaviors.validation.onPass;
+  wFORMS.behaviors.validation.onPass = function(f,e){;
+   var submit = base2.DOM.Element.querySelector(document,'.actions .primaryAction[type="submit"]');
+   if(e && e.type=="submit"){
+    submit.setAttribute('disabled','disabled');
+    submit.setAttribute('style','color: grey');
+    submit.setAttribute('value','Sending...');
+   }
+   return _pv(f,e);
+  };
+ });
+
+ function addSubmitFunc(submitFunc) {
+  var _pv = wFORMS.behaviors.validation.onFail;
+  wFORMS.behaviors.validation.onFail = function(f,e){;
+   var submit = base2.DOM.Element.querySelector(document,'.actions .primaryAction[type="submit"]');
+   if(e && e.type=="submit"){
+    submitFunc() ;
+   }
+   return _pv(f,e);
+  };
+ }
+ 
+ </script>
+	<script type="text/javascript">
+  if(document.domain.indexOf('force.com')>-1) {
+   document.domain='force.com';
+  }
+  $("body").addClass("default wFormWebPage");
+
+  if(params['loadFunc'] != null && params['loadFunc'] != '') {
+   parent[params['loadFunc']]() ;
+  }
+ </script>
+	<style>
+		.ui-autocomplete {
+			max-height: 100px;
+			overflow-y: auto;		/* prevent horizontal scrollbar */
+			overflow-x: hidden;		/* add padding to account for vertical scrollbar */
+			padding-right: 20px;
+			z-index: 500 !important;/* Make schoolpicker appear above masked fields below it*/
+			font-size: 75%;
+		}
+
+		html, body {
+			-webkit-overflow-scrolling: touch;
+		}
+
+	</style>
+
+	
+<script type="text/javascript" id="">console.log("Mason Template Container Version: 3.4.1");console.log("GTM Container ID: GTM-PJR8XS8");console.log("Hostname: mason.my.site.com|mason.my.salesforce-sites.com");console.log("UAID-Local: UA-XXXXXXX-X");console.log("UAID-Roll-Up 01: UA-1007599-1");console.log("UAID-Roll-Up 02: UA-XXXXXXX-X");console.log("GA4 Measurement ID - Local: G-HF8Z5BMP9T");console.log("GA4 Measurement ID - Roll-Up 01: G-HT824NR8GX");console.log("GA4 Measurement ID - Roll-Up 02: G-XFKQFGC480");</script>
+<script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g+"/cbe/cbe.js";d.parentNode.insertBefore(c,d)})(window,document,"script","https://cbe.capturehighered.net","_cbe");_cbe("create","a4e9a6f0");_cbe("log","pageview");</script>
+<script type="text/javascript" id="">var tag=document.createElement("script");tag.src=document.location.protocol+"//www.youtube.com/iframe_api";var firstScriptTag=document.getElementsByTagName("script")[0];firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);var videoArray=[],playerArray=[],Settings_HitType="gtm";
+function _sendYouTubeProgressEvent(a,b,d){"classic"==d?_gaq.push(["_trackEvent","video",""+b+"%",a,b]):"universal"==d?ga("send","event","video",+b+"%",a,b):"gtm"==d&&dataLayer.push({event:"eventTracker",eventCat:"video",eventAct:""+b+"%",eventLbl:a,eventVal:b})}(function(a){function b(){var b=0;a("iframe").each(function(){a(this);var c=this.src;IsYouTube(c)&&(this.src=YTUrlHandler(c),c=youtube_parser(c),videoArray[b]=c,this.setAttribute("id",c),b++)})}a(document).ready(function(){b()})})(jQuery);
+function onYouTubeIframeAPIReady(){for(var a=0;a<videoArray.length;a++)playerArray[a]=new YT.Player(videoArray[a],{events:{onReady:onPlayerReady,onStateChange:onPlayerStateChange}})}function onPlayerReady(a){}cCi=1;
+function onPlayerStateChange(a){var b=a.target.getVideoData().title;var d=a.target.getVideoData().video_id;for(var c=0,e=0;e<videoArray.length;e++)videoArray[e]==d&&(c=e);d=(parseInt(a.target.getCurrentTime())/parseInt(a.target.getDuration())*100).toFixed();a.data==YT.PlayerState.PLAYING&&0==d&&(eval("(function() {  var flag_"+cCi+"_25 \x3d false;var flag_"+cCi+"_50 \x3d false;var flag_"+cCi+"_75 \x3d false;var flag_"+cCi+"_95 \x3d false;function xx"+cCi+"(vindx){ var percentage \x3d ((parseInt(playerArray[vindx].getCurrentTime()) / parseInt(playerArray[vindx].getDuration())) * 100).toFixed();var videotitle \x3d playerArray[vindx].getVideoData().title; if (percentage \x3c 100) { if (percentage \x3e 25 \x26\x26 percentage \x3c\x3d 50 \x26\x26 flag_"+
+cCi+"_25 \x3d\x3d false) { _sendYouTubeProgressEvent(videotitle,25,Settings_HitType); flag_"+cCi+"_25\x3dtrue; }if (percentage \x3e 50 \x26\x26 percentage \x3c\x3d 75 \x26\x26 flag_"+cCi+"_50 \x3d\x3d false) {_sendYouTubeProgressEvent(videotitle,50,Settings_HitType);flag_"+cCi+"_50\x3dtrue;}if (percentage \x3e 75 \x26\x26 percentage \x3c\x3d 95 \x26\x26 flag_"+cCi+"_75 \x3d\x3d false) {_sendYouTubeProgressEvent(videotitle,75,Settings_HitType);flag_"+cCi+"_75\x3dtrue;}if (percentage \x3e 95 \x26\x26 flag_"+
+cCi+"_95 \x3d\x3d false) {_sendYouTubeProgressEvent(videotitle,95,Settings_HitType);flag_"+cCi+"_95\x3dtrue;}} }setInterval(function(){  xx"+cCi+"("+c+"); }, parseInt("+a.target.getDuration()+")/10); })();"),cCi++);a.data==YT.PlayerState.PLAYING&&("classic"==Settings_HitType?_gaq.push(["_trackEvent","video","play",b,0]):"universal"==Settings_HitType?ga("send","event","video","play",b):"gtm"==Settings_HitType&&dataLayer.push({event:"eventTracker",eventCat:"video",eventAct:"play",eventLbl:b,eventVal:0}));
+a.data==YT.PlayerState.ENDED&&("classic"==Settings_HitType?_gaq.push(["_trackEvent","video","complete",b,100]):"universal"==Settings_HitType?ga("send","event","video","complete",b,100):"gtm"==Settings_HitType&&dataLayer.push({event:"eventTracker",eventCat:"video",eventAct:"complete",eventLbl:b,eventVal:100}));a.data==YT.PlayerState.PAUSED&&("classic"==Settings_HitType?_gaq.push(["_trackEvent","video","pause",b,0]):"universal"==Settings_HitType?ga("send","event","video","pause",b,0):"gtm"==Settings_HitType&&
+dataLayer.push({event:"eventTracker",eventCat:"video",eventAct:"pause",eventLbl:b,eventVal:0}))}function youtube_parser(a){var b=/^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&\?]*).*/;if((a=a.match(b))&&11==a[2].length)return a[2]}function IsYouTube(a){var b=/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&\?]*).*/;a=a.match(b);return null!=a&&0<a.length?!0:!1}
+function YTUrlHandler(a){a=a.replace(/origin=(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})&?/ig,"origin\x3d"+document.location.protocol+"//"+document.location.host);stAdd="";adFlag=!1;-1==a.indexOf("https")&&(a=a.replace("http","https"));-1==a.indexOf("?")&&(stAdd="?flag\x3d1");-1==a.indexOf("enablejsapi")&&(stAdd+="\x26enablejsapi\x3d1",adFlag=!0);-1==a.indexOf("origin")&&(stAdd+="\x26origin\x3d"+document.location.protocol+"//"+document.location.host,adFlag=!0);return 1==adFlag?a+stAdd:a};</script></body></html>
