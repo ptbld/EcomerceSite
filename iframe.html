@@ -125,101 +125,56 @@
 
 	<body onload="sizeiFrame()" class="default wFormWebPage">
 <script type="text/javascript">
-
 var utag_data = {
-page_type : "", // Page Type
-partner_name : "", // Partner Name
-program_name : "", // Program Name
-order_id : "", // Order ID
-page_category : "", // Page Category
-page_name : "", // Page Name
-page_section : "", // Page Section
-search_keyword : "", // Search Keyword
-search_results : "", // Search Results
-boolean_conversion_floodlight : "", //
-null_specialization : "", //
-revenue : "", //
-customdimension_2 : "", //
-event_category : "", //
-event_action : "", //
-event_label : "", //
-non_interaction : "", //
-event_name : "", //
-event_location : "", //
-tealium_event : "", //
-site_type : "", //
-site_section : "", //
-page_url : "", //
-is_conversion : "", //
-site_sub_section : "", //
-ga_cid : "", //
-session_count : "", //
-event_value : "", //
-aw_conv_label_library_eopm : "", //
-facebook_pixel_id : "", //
-boolean_true : "", //
-isMicrosite : "", //
-aw_conv_id_library : "", // Derived from extension - Set data values for adwords_conversion_id - Library
-aw_conv_label_library : "", // Derived from extension - Set data values for adwords_conversion_label - Library
-adwords_parameters_library : "", // AdWords Parameters based on partner name
-is_landing_page : "", //
-tealium_random : "", //
-floodlight_advertier_id : "", //
-floodlight_activity_group : "", //
-floodlight_activity : "", //
-floodlight_counting_method : "", //
-floodlight_u1 : "", //
-floodlight_u2 : "", //
-floodlight_page_category : "", //
-floodlight_is_microsite : "", //
-floodlight_u3 : "", //
-floodlight_order_id : "", //
-floodlight_revenue : "", //
-program_level : "", //
-program_modality : "", //
-program_uuid : "", //
-program_vertical : "", //
-site_subsection1 : "", //
-site_subsection2 : "", //
-site_subsection3 : "", //
-site_subsection4 : "", //
-ga4_measurement_id : "", //
-site_framework : "", //
-iq_event_id : "", // A system variable that contains the ID of an iQ event and used to fire a tag when an event happens.
-metric_id : "", //
-metric_delta : "", //
-metric_value : "", //
-abtest_experiment : "", //
-abtest_variant : "", //
-event_name_ga4 : "", //
-scroll_percent : "", //
-form_step : "", //
-link_click_type : "", //
-placement : "", //
-click_text : "", //
-keyword : "", //
-header_name : "", //
-button_name : "", //
-form_name : "", //
-current_step : "", //
-next_step : "", //
-UID : "", //
-referrer : "", //
-content_group : "", //
-page_url_ : "", //
-gbsessionid : "" //
+  product_id : "", // Contains product ID(s) - multiple values should be comma-separated.
+  product_sku : "", // Contains product SKU(s) - multiple values should be comma-separated.
+  product_name : "", // Contains product name(s) - multiple values should be comma-separated.
+  product_brand : "", // Contains product brand(s) - multiple values should be comma-separated.
+  product_category : "", // Contains product category(s) - multiple values should be comma-separated.
+  product_subcategory : "", // Contains product subcategory(s) - multiple values should be comma-separated.
+  product_unit_price : "", // Contains product unit price(s) - multiple values should be comma-separated.
+  product_list_price : "", // Contains product list price(s) before discount - multiple values should be comma-separated.
+  product_quantity : "", // Contains product quantity(s) - multiple values should be comma-separated.
+  product_discount : "", // Contains product discount(s) - multiple values should be comma-separated.
+  order_id : "", // Contains the order or transaction ID.
+  order_total : "", // Contains the order total value.
+  order_subtotal : "", // Contains the order subtotal (not containing taxes &amp; shipping).
+  order_payment_type : "", // Contains the order payment type.
+  order_discount : "", // Contains the order discount (if any).
+  order_shipping : "", // Contains the order shipping value.
+  order_tax : "", // Contains the order tax amount.
+  order_currency : "", // Contains the currency associated with the transaction, e.g. 'USD'.
+  order_coupon_code : "", // Contains the order coupon code.
+  order_coupon_discount : "", // Contains the order coupon discount.
+  order_store : "", // Contains identification information for a store.
+  order_type : "", // Contains type of order/cart.
+  customer_id : "", // Contains the customer ID.
+  customer_city : "", // Contains the customer city.
+  customer_state : "", // Contains the customer state.
+  customer_zip : "", // Contains the customer zip/postal code.
+  customer_country : "", // Contains the customer country.
+  customer_email : "", // Contains the customer email.
+  customer_type : "", // Contains the customer type.
+  customer_username : "", // Contains the customer's username, e.g. johndoe38.
+  customer_status : "", // Contains the customer's status, e.g. 'logged in'.
+  page_name : "", // Contains a user-friendly name for the page.
+  page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+  page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+  page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+  page_type : "" // Contains a user-friendly page type, e.g. 'cart page'.
 }
 </script>
 
-
+<!-- Loading script asynchronously -->
 <script type="text/javascript">
-(function(a,b,c,d){
-a='https://tags.tiqcdn.com/utag/deltak/gmu/prod/utag.js';
-b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-})();
+    (function(a,b,c,d){
+    a='https://tags.tiqcdn.com/utag/edu-es-exam-2023/exam028/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
 
-</script> 
+    
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">	
 	<script src="/soap/ajax/23.0/connection.js"></script>
 	<link href="/form/resource/1689247335000/TargetX_Eventsb__JSresources/themes.1.12.0/smoothness/jquery-ui.min.css" rel="stylesheet"><span class="default wFormWebPage">
