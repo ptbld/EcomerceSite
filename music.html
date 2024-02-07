@@ -12,6 +12,20 @@
 
 <script type="text/javascript">
 var utag_data = {
+  tealium_event : "", // 
+  event_category : "", // 
+  event_action : "", // 
+  event_label : "", // 
+  view_item : "", // 
+  view_cart : "", // 
+  add_to_cart : "", // 
+  add_shipping_info : "", // 
+  purchase : "", // 
+  page_name : "", // Contains a user-friendly name for the page.
+  page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
+  page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
+  page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
+  page_type : "", // Contains a user-friendly page type, e.g. 'cart page'.
   product_id : "", // Contains product ID(s) - multiple values should be comma-separated.
   product_sku : "", // Contains product SKU(s) - multiple values should be comma-separated.
   product_name : "", // Contains product name(s) - multiple values should be comma-separated.
@@ -43,22 +57,24 @@ var utag_data = {
   customer_type : "", // Contains the customer type.
   customer_username : "", // Contains the customer's username, e.g. johndoe38.
   customer_status : "", // Contains the customer's status, e.g. 'logged in'.
-  page_name : "", // Contains a user-friendly name for the page.
-  page_section : "", // Contains a user-friendly page section, e.g. 'configuration section'.
-  page_category : "", // Contains a user-friendly page category, e.g. 'appliance page'.
-  page_subcategory : "", // Contains a user-friendly page subcategory, e.g. 'refrigerator page'.
-  page_type : "" // Contains a user-friendly page type, e.g. 'cart page'.
+  iq_event_id : "", // A system variable that contains the ID of an iQ event and used to fire a tag when an event happens.
+  percent_visible : "", // 
+  duration : "" // 
 }
 </script>
 
 <!-- Loading script asynchronously -->
 <script type="text/javascript">
     (function(a,b,c,d){
-    a='https://tags.tiqcdn.com/utag/edu-es-exam-2023/exam028/prod/utag.js';
+    a='https://tags.tiqcdn.com/utag/nabler-sandbox/rohit.m/prod/utag.js';
     b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
     a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
     })();
 </script>
+
+    
+
+
 
     
        
@@ -118,8 +134,7 @@ var utag_data = {
                     </div>
                 </div>
                  <div class="">
-                  <iframe id="masononline-rfi" title="Mason Online Information Request Form" src="iframe.html" style="width: 100%; height: 90vh; border: none;">
-</iframe>
+                 
                 </div>
             </div>
         </section>
